@@ -1,0 +1,7 @@
+@each $palette-color-prefix, $palette-color-variables in get-colors-palette($progress-bars-colors-support-extra-colors-palette, $progress-bars-colors-support-class-colors-palette) {
+    .#{$colors-class-prefix}-#{$palette-color-prefix} {
+        @include progress-bars-colors(parse-map($progress-bars-colors-support-parser, $palette-color-variables));
+    }
+
+    @include class-progress-bars-colors('#{$colors-class-prefix}-#{$palette-color-prefix}', parse-map($progress-bars-colors-support-parser, $palette-color-variables));
+}
