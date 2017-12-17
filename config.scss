@@ -1,8 +1,9 @@
 $progress-bars-colors-support-parser: (
+    outline-color: null,
     border-color: null,
-    background: null,
-    meter-background: color,
-    color: 'background-inner-color'
+    background-color: null,
+    meter-background-color: color,
+    meter-info-color: 'background-inner-color'
 ) !default;
 
 $progress-bars-colors-support-extra-colors-palette: () !default;
